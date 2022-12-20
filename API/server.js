@@ -18,7 +18,8 @@ app.use(express.urlencoded({
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to the recipe app!" });
 });
-require("./app/routes/product-routes")(app);
+require("./app/routes/ingredient-routes")(app);
+require("./app/routes/recipe-routes")(app);
 require("./app/routes/user-routes")(app);
 
 const PORT = process.env.PORT || 8080;
