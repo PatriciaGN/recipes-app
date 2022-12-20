@@ -1,8 +1,8 @@
 module.exports = {
-    HOST: "localhost",
-    USER: "postgresdb",
-    PASSWORD: "Yuhu123",
-    DB: "recipes-app",
+    HOST: "db",
+    USER: "root",
+    PASSWORD: "root",
+    DB: "dev_recipeapp",
     dialect: "postgres",
     pool: {
       max: 5,
