@@ -1,5 +1,5 @@
 const { jwtAuth } = require("../middleware");
-const productServices = require("../services/ingredient-services.js");
+const ingredientServices = require("../services/ingredient-services.js");
 
 module.exports = function(app) {
   app.use(function(req, res, next) {
