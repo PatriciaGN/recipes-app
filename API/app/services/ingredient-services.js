@@ -7,7 +7,7 @@ exports.create = (req, res) => {
   console.log("Request : ", req.body)
   validateRequest(req);
 
-  const product = {
+  const ingredient = {
     name: req.body.name,
     isDeleted: req.body.isDeleted ? req.body.isDeleted : false
   };
@@ -38,7 +38,7 @@ exports.findAll = (req, res) => {
     });
 };
 
-// Find product by product id
+// Find ingredient by ingredient id
 exports.findOne = (req, res) => {
   console.log("Request : ", req.body)
   validateRequest(req);
