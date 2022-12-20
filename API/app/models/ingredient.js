@@ -7,6 +7,6 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.BOOLEAN
       }
     });
-    Ingredient.belongsToMany(Recipe, {through: 'RecipeIngredients'})
+    // Ingredient.belongsToMany(Recipe, {through: 'RecipeIngredients'})
     return Ingredient;
   };
